@@ -82,6 +82,7 @@ body {
   width: 300px;
   height: 300px;
   background-color: deepskyblue;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -97,4 +98,69 @@ h1 {
 .txt {
   font-size: 16px;
   color: #fffcd6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .puzzle {
+    grid-template: repeat(4, 80px) / repeat(4, 80px);
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  #shuffle-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  #win-message {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .puzzle {
+    grid-template: repeat(4, 60px) / repeat(4, 60px);
+  }
+
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  #shuffle-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  #win-message {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .digit {
+    font-size: 24px;
+  }
+
+  .txt {
+    font-size: 14px;
+  }
 }
