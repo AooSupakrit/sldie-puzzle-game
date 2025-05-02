@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .slice(0, -1)
       .every((cell, i) => cell.innerHTML === (i + 1).toString());
 
-  timer = false;
-
   const shufflePuzzle = () => {
     winMessage.classList.add("hidden");
 
@@ -70,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isAdjacent(cellIndex, emptyIndex)) {
         swapCells(cell, emptyCell);
         if (isSolved()) winMessage.classList.remove("hidden");
+        timer = false;
       }
     }
   });
