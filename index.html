@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="puzzle-container">
+      <div class="puzzle">
+        <div class="cell" data-index="0">1</div>
+        <div class="cell" data-index="1">2</div>
+        <div class="cell" data-index="2">3</div>
+        <div class="cell" data-index="3">4</div>
+        <div class="cell" data-index="4">5</div>
+        <div class="cell" data-index="5">6</div>
+        <div class="cell" data-index="6">7</div>
+        <div class="cell" data-index="7">8</div>
+        <div class="cell" data-index="8">9</div>
+        <div class="cell" data-index="9">10</div>
+        <div class="cell" data-index="10">11</div>
+        <div class="cell" data-index="11">12</div>
+        <div class="cell" data-index="12">13</div>
+        <div class="cell" data-index="13">14</div>
+        <div class="cell" data-index="14">15</div>
+        <div class="cell empty" data-index="15"></div>
+      </div>
+      <button id="shuffle-button">Shuffle</button>
+    </div>
+    <div id="win-message" class="hidden">
+      Congratulations! You solve the puzzle.
+    </div>
+    <div class="container">
+      <h1>Stop Watch</h1>
+      <div id="time">
+        <span class="digit" id="hr"> 00</span>
+        <span class="txt">Hr</span>
+        <span class="digit" id="min"> 00</span>
+        <span class="txt">Min</span>
+        <span class="digit" id="sec"> 00</span>
+        <span class="txt">Sec</span>
+        <span class="digit" id="count"> 00</span>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
