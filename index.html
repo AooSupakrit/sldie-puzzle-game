@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="puzzle-container">
+      <h1>Slide Puzzle</h1>
       <div class="puzzle">
         <div class="cell" data-index="0">1</div>
         <div class="cell" data-index="1">2</div>
@@ -27,22 +28,19 @@
         <div class="cell empty" data-index="15"></div>
       </div>
       <button id="shuffle-button">Shuffle</button>
-    </div>
-    <div id="win-message" class="hidden">
-      Congratulations! You solve the puzzle.
-    </div>
-    <div class="container">
-      <h1>Stop Watch</h1>
-      <div id="time">
-        <span class="digit" id="hr"> 00</span>
-        <span class="txt">Hr</span>
-        <span class="digit" id="min"> 00</span>
-        <span class="txt">Min</span>
-        <span class="digit" id="sec"> 00</span>
-        <span class="txt">Sec</span>
-        <span class="digit" id="count"> 00</span>
+      <div id="win-message" class="hidden">
+        Congratulations! You solved the puzzle.
       </div>
     </div>
+    <div class="stopwatch-container">
+      <h1>Stopwatch</h1>
+      <div id="time">
+        <span class="digit" id="hr">00</span><span class="txt">Hr</span>
+        <span class="digit" id="min">00</span><span class="txt">Min</span>
+        <span class="digit" id="sec">00</span><span class="txt">Sec</span>
+        <span class="digit" id="count">00</span>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>

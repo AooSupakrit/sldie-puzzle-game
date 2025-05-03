@@ -1,10 +1,19 @@
+/* General Styles */
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #ebecf9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: orangered;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .puzzle-container {
@@ -12,9 +21,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: -5px -5px 20px #fff, 5px 5px 10px #babebc;
+  background-color: #ffffff;
 }
 
 .puzzle {
@@ -37,7 +47,7 @@ body {
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cell:active {
@@ -56,6 +66,9 @@ body {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
@@ -74,30 +87,19 @@ body {
   visibility: hidden;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-  background-color: deepskyblue;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  color: orangered;
+.stopwatch-container {
+  margin-top: 20px;
   text-align: center;
 }
 
 .digit {
   font-size: 36px;
-  color: #fff;
+  color: #3498db;
 }
 
 .txt {
   font-size: 16px;
-  color: #fffcd6;
+  color: #555;
 }
 
 /* Responsive Design */
@@ -120,11 +122,6 @@ h1 {
   #win-message {
     font-size: 1.2rem;
   }
-
-  .container {
-    width: 250px;
-    height: 250px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -145,15 +142,6 @@ h1 {
 
   #win-message {
     font-size: 1rem;
-  }
-
-  .container {
-    width: 200px;
-    height: 200px;
-  }
-
-  h1 {
-    font-size: 1.2rem;
   }
 
   .digit {
